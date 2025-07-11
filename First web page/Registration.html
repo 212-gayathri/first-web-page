@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Register</title>
+    <link rel="stylesheet" href="bstyle.css" type="text/css">
+  </head>
+  <body style="background-color: rgb(77, 77, 77);">
+<div class="container" id="donateForm">
+    <h2>Blood Donation Registration</h2>
+    <form action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required min="18" max="65" />
+
+      <label for="blood-group">Blood Group</label>
+      <select id="blood-group" name="blood-group" required>
+        <option value="">Select your blood group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+
+      <label for="contact">Contact Number</label>
+      <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required />
+       <button type="submit" id="click me">Submit Registration</button>
+    </form>
+     <script>
+        const submitButton = document.getElementById('click me');
+        submitButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Your registration completed');
+        });
+    </script>
+  </div>
+  </body>
+</html>

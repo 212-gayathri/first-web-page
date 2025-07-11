@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Register</title>
+    <!-- <link rel="stylesheet" href="bstyle.css" type="text/css"> -->
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f8f8f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+       .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #64a3ac;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #c0392b;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form select {
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #5a0900;
+      color: #fff;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.4s ease;
+    }
+
+    form button:hover {
+      background: #a93226;
+    }
+
+      </style>
+  </head>
+  <body style="background-color: rgb(77, 77, 77);">
+<div class="container" id="donateForm">
+    <h2>LOGIN</h2>
+    <form action="#" method="POST">
+     <input id="em" type="text/number" placeholder="Enter your E-mail/Mobile number" required />
+     <input id="psw" type="password" placeholder="Enter your Password" required />
+     <br>
+     <button id="Login" type="login">Login</button>
+    </form>
+  </div>
+  </body>
+</html>
